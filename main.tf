@@ -15,7 +15,7 @@ region = "ap-south-1"
 }
  
 resource "aws_instance" "myec2" {
-  ami           = "ami-03a6eaae9938c858c"
+  ami           = "ami-0c42696027a8ede58"
   instance_type = "t2.micro"
   vpc_security_group_ids=[aws_security_group.web-sg.id]
   key_name="tf-key-pair"
